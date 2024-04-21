@@ -1,0 +1,1063 @@
+2024-04-21 12:43:00,021 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:43:12,517 django.utils.autoreload INFO     D:\projects\admaren\apps\users\urls.py changed, reloading.
+2024-04-21 12:43:13,416 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:49:15,119 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\urls.py changed, reloading.
+2024-04-21 12:49:17,524 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:49:22,242 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\views.py changed, reloading.
+2024-04-21 12:49:23,769 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:49:46,466 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\views.py changed, reloading.
+2024-04-21 12:49:48,076 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:49:58,351 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\views.py changed, reloading.
+2024-04-21 12:50:00,050 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:50:03,589 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\views.py changed, reloading.
+2024-04-21 12:50:05,344 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:50:20,209 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\urls.py changed, reloading.
+2024-04-21 12:50:21,739 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:50:26,560 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\views.py changed, reloading.
+2024-04-21 12:50:27,851 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:50:34,165 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\urls.py changed, reloading.
+2024-04-21 12:50:35,501 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:50:39,903 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\urls.py changed, reloading.
+2024-04-21 12:50:41,352 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:50:43,863 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\urls.py changed, reloading.
+2024-04-21 12:50:45,436 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:50:54,016 django.request ERROR    Internal Server Error: /api/docs/
+Traceback (most recent call last):
+  File "D:\projects\admaren\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\projects\admaren\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\projects\admaren\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 45, in get_operation
+    responses = self.get_responses()
+                ^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 180, in get_responses
+    response_serializers = self.get_response_serializers()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 235, in get_response_serializers
+    responses = self.get_default_responses()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 211, in get_default_responses
+    default_schema = self.serializer_to_schema(default_schema) or ''
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\inspectors\base.py", line 438, in serializer_to_schema
+    return self.probe_inspectors(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\inspectors\field.py", line 38, in get_schema
+    return self.probe_field_inspectors(serializer, openapi.Schema, self.use_definitions)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\inspectors\base.py", line 228, in probe_field_inspectors
+    return self.probe_inspectors(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\inspectors\field.py", line 129, in field_to_swagger_object
+    actual_schema = definitions.setdefault(ref_name, make_schema_definition)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\openapi.py", line 685, in setdefault
+    ret = maker()
+          ^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\drf_yasg\inspectors\field.py", line 98, in make_schema_definition
+    for property_name, child in serializer.fields.items():
+                                ^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\rest_framework\serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\rest_framework\serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\rest_framework\serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `pickup_latitude` is not valid for model `Snippet`.
+2024-04-21 12:51:22,375 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 12:51:24,236 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:51:27,096 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 12:51:28,492 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:51:44,016 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\urls.py changed, reloading.
+2024-04-21 12:51:45,857 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:52:33,908 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\views.py changed, reloading.
+2024-04-21 12:52:35,382 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:52:37,272 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\views.py changed, reloading.
+2024-04-21 12:52:38,614 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:52:43,746 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\views.py changed, reloading.
+2024-04-21 12:52:45,250 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:52:47,085 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\views.py changed, reloading.
+2024-04-21 12:52:48,651 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:53:02,240 django.request WARNING  Unauthorized: /api/auth/token/refresh/
+2024-04-21 12:53:32,083 django.request WARNING  Method Not Allowed: /api/auth/token/refresh/
+2024-04-21 12:54:19,706 django.request WARNING  Unauthorized: /api/users/get-users
+2024-04-21 12:55:12,806 django.utils.autoreload INFO     D:\projects\admaren\apps\authentication\urls.py changed, reloading.
+2024-04-21 12:55:15,412 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:55:26,820 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:55:40,853 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:55:42,339 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:55:47,204 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 12:55:48,850 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:55:55,864 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:55:57,486 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:55:59,923 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:56:01,248 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:56:08,212 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:56:09,841 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:56:12,425 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:56:14,349 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:56:21,294 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:56:22,992 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:56:31,896 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:56:33,341 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:56:43,508 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:56:44,936 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:56:47,572 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:56:49,195 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:57:01,912 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:57:03,581 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:57:06,091 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:57:07,388 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:57:16,372 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:57:17,813 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:57:30,616 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:57:32,026 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:57:34,728 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:57:36,192 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:57:48,573 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:57:50,103 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:57:54,681 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:57:56,234 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:57:58,809 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:58:00,350 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:58:14,030 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:58:15,837 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:58:19,460 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:58:21,203 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:58:24,773 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:58:26,074 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:58:29,556 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:58:31,131 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:58:39,263 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:58:40,617 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:58:43,370 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:58:44,892 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:58:47,589 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:58:49,070 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:59:00,229 django.utils.autoreload INFO     D:\projects\admaren\apps\users\schemas.py changed, reloading.
+2024-04-21 12:59:01,589 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:59:05,286 django.utils.autoreload INFO     D:\projects\admaren\apps\users\schemas.py changed, reloading.
+2024-04-21 12:59:06,847 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:59:17,369 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:59:18,989 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:59:21,612 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:59:23,091 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:59:25,553 django.utils.autoreload INFO     D:\projects\admaren\apps\users\schemas.py changed, reloading.
+2024-04-21 12:59:26,784 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:59:31,207 django.utils.autoreload INFO     D:\projects\admaren\apps\users\schemas.py changed, reloading.
+2024-04-21 12:59:32,762 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:59:36,264 django.utils.autoreload INFO     D:\projects\admaren\apps\users\schemas.py changed, reloading.
+2024-04-21 12:59:37,733 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:59:42,355 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:59:43,863 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 12:59:56,298 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 12:59:57,895 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:00:05,859 django.utils.autoreload INFO     D:\projects\admaren\apps\users\schemas.py changed, reloading.
+2024-04-21 13:00:07,589 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:00:11,510 django.utils.autoreload INFO     D:\projects\admaren\apps\users\schemas.py changed, reloading.
+2024-04-21 13:00:12,951 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:00:23,196 django.utils.autoreload INFO     D:\projects\admaren\apps\users\models.py changed, reloading.
+2024-04-21 13:00:24,950 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:00:27,552 django.utils.autoreload INFO     D:\projects\admaren\apps\users\models.py changed, reloading.
+2024-04-21 13:00:29,119 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:00:31,709 django.utils.autoreload INFO     D:\projects\admaren\apps\users\schemas.py changed, reloading.
+2024-04-21 13:00:33,158 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:00:36,767 django.utils.autoreload INFO     D:\projects\admaren\apps\users\schemas.py changed, reloading.
+2024-04-21 13:00:38,579 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:00:40,971 django.utils.autoreload INFO     D:\projects\admaren\apps\users\schemas.py changed, reloading.
+2024-04-21 13:00:42,528 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:01:22,432 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:01:25,191 django.utils.autoreload INFO     D:\projects\admaren\apps\users\schemas.py changed, reloading.
+2024-04-21 13:01:27,490 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:01:46,451 django.utils.autoreload INFO     D:\projects\admaren\apps\users\urls.py changed, reloading.
+2024-04-21 13:01:48,060 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:01:51,795 django.utils.autoreload INFO     D:\projects\admaren\apps\users\urls.py changed, reloading.
+2024-04-21 13:01:53,188 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:01:55,522 django.utils.autoreload INFO     D:\projects\admaren\apps\users\urls.py changed, reloading.
+2024-04-21 13:01:56,863 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:02:00,363 django.utils.autoreload INFO     D:\projects\admaren\apps\users\urls.py changed, reloading.
+2024-04-21 13:02:01,742 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:02:05,187 django.utils.autoreload INFO     D:\projects\admaren\apps\users\urls.py changed, reloading.
+2024-04-21 13:02:06,549 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:02:09,193 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 13:02:10,682 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:02:13,200 django.utils.autoreload INFO     D:\projects\admaren\apps\users\urls.py changed, reloading.
+2024-04-21 13:02:14,876 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:02:25,538 django.request WARNING  Unauthorized: /api/users/get-user-details
+2024-04-21 13:02:56,615 django.utils.autoreload INFO     D:\projects\admaren\apps\users\schemas.py changed, reloading.
+2024-04-21 13:02:57,961 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:03:12,758 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:03:14,265 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:03:16,951 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:03:18,314 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:03:20,602 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:03:21,912 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:03:24,284 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:03:25,650 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:03:29,146 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:03:30,500 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:03:36,087 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:03:37,432 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:03:41,139 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:03:43,068 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:03:49,927 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:03:51,645 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:03:54,089 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:03:55,471 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:03:59,591 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:04:01,206 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:04:06,975 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:04:08,611 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:04:11,227 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:04:12,634 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:04:15,195 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:04:16,764 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:04:19,183 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:04:20,700 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:04:23,331 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:04:24,715 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:04:31,511 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:04:33,141 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:04:38,886 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:04:40,764 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:04:44,339 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:04:45,844 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:04:48,356 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:04:50,523 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:04:53,115 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:04:54,667 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:05:01,392 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:05:02,767 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:05:05,738 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 13:05:07,738 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:05:10,702 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:05:12,227 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:05:22,457 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:05:24,210 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:05:28,231 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:05:29,700 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:05:32,048 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:05:33,644 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:05:50,628 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:05:52,195 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:05:54,631 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:05:55,899 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:06:19,165 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:06:20,915 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:06:24,732 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:06:26,205 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:06:29,676 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:06:31,335 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:06:33,846 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:06:35,305 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:06:47,378 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:06:48,974 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:06:53,677 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:06:55,205 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:07:00,082 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:07:01,461 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:07:04,977 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:07:06,584 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:07:10,329 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:07:11,841 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:07:14,345 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:07:16,040 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:07:23,083 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:07:24,863 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:07:30,661 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:07:32,225 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:07:35,005 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:07:36,602 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:07:54,372 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:07:55,907 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:08:01,991 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:08:03,626 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:08:08,480 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:08:09,988 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:08:13,703 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:08:15,821 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:08:18,317 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:08:20,177 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:08:22,728 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:08:24,232 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:08:26,772 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:08:28,024 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:08:50,217 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:08:51,610 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:08:58,398 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:08:59,843 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:09:02,563 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:09:03,859 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:09:06,443 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:09:08,830 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:09:11,840 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:09:13,523 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:09:18,275 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:09:19,965 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:09:22,636 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:09:24,409 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:09:26,939 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:09:28,174 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:09:33,557 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:09:35,111 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:09:38,740 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:09:40,188 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:09:46,145 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:09:47,839 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:09:54,880 django.request WARNING  Unauthorized: /api/texthandler/v1/create-snippet-text
+2024-04-21 13:10:18,307 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:10:20,034 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:10:23,164 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:10:24,680 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:10:40,484 django.request WARNING  Unauthorized: /api/texthandler/v1/create-snippet-text
+2024-04-21 13:10:48,164 django.request ERROR    Internal Server Error: /api/texthandler/v1/create-snippet-text
+2024-04-21 13:11:14,789 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 13:11:16,714 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:11:32,895 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:11:34,603 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:11:44,151 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:11:46,415 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:12:18,533 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:12:20,308 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:12:23,389 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:12:24,986 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:12:32,852 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:12:34,582 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:12:40,104 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:12:42,050 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:12:44,501 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:12:46,079 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:12:48,565 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:12:50,042 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:12:58,066 django.request WARNING  Not Found: /favicon.ico
+2024-04-21 13:13:25,087 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:13:26,558 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:13:29,216 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:13:30,920 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:13:45,593 django.request ERROR    Internal Server Error: /admin/texthandler/snippet/
+Traceback (most recent call last):
+  File "D:\projects\admaren\venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\admaren\venv\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Snippet has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\admaren\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 345, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in __init__
+    super().__init__(*items)
+  File "D:\projects\admaren\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\contrib\admin\options.py", line 998, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\utils\html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\utils\html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\utils\functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\admaren\venv\Lib\site-packages\django\utils\html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "D:\projects\admaren\apps\texthandler\models.py", line 33, in __str__
+    return str(self.tagtitle)
+               ^^^^^^^^^^^^^
+AttributeError: 'Snippet' object has no attribute 'tagtitle'
+2024-04-21 13:13:53,094 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 13:13:54,477 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:14:09,238 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 13:14:10,615 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:14:13,580 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 13:14:15,119 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:14:18,696 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 13:14:20,186 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:14:24,916 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 13:14:26,420 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:14:30,575 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 13:14:32,227 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:16:53,095 django.request ERROR    Internal Server Error: /api/texthandler/v1/create-snippet-text
+2024-04-21 13:17:06,507 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 13:17:19,129 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:17:49,095 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:17:50,536 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:17:56,528 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:17:58,185 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:18:02,042 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:18:03,554 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:18:06,053 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:18:07,459 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:18:18,684 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:18:20,027 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:18:23,927 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:18:25,866 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:18:29,480 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:18:31,107 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:18:34,669 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:18:36,396 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:19:14,013 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:19:23,136 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:19:24,867 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:19:27,269 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:19:29,244 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:19:31,855 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:19:33,426 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:19:38,021 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:19:39,445 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:19:42,511 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:19:43,878 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:19:47,427 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:19:48,821 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:19:54,943 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:19:56,770 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:20:03,080 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:20:04,719 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:20:08,717 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:20:10,354 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:20:12,683 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:20:14,360 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:21:13,250 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:21:15,171 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:21:18,013 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:21:19,735 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:21:22,384 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:21:24,036 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:21:27,786 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:21:30,131 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:21:34,091 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:21:36,011 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:21:40,393 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:21:42,227 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:21:44,981 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:21:46,507 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:21:53,624 django.utils.autoreload INFO     D:\projects\admaren\apps\users\views.py changed, reloading.
+2024-04-21 13:21:55,088 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:22:01,361 django.utils.autoreload INFO     D:\projects\admaren\apps\users\urls.py changed, reloading.
+2024-04-21 13:22:03,259 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:22:06,082 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:22:07,771 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:22:10,325 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:22:11,965 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:22:15,670 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:22:17,538 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:22:32,417 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:22:39,405 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:22:40,975 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:22:42,950 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:22:44,611 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:22:47,210 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:22:48,668 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:22:50,640 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:22:52,256 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:22:58,654 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:23:00,443 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:23:06,208 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:23:07,988 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:23:12,814 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:23:14,759 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:23:27,470 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:23:28,786 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:23:31,494 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:23:32,910 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:24:30,830 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:24:33,625 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:24:36,467 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:24:38,402 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:24:41,062 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:24:42,424 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:24:53,152 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:24:54,609 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:24:57,372 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:24:58,835 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:25:15,734 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:25:17,083 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:25:22,890 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:25:24,195 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:25:38,559 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:25:39,937 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:25:45,820 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:25:47,319 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:25:50,076 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:25:51,621 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:26:00,597 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:26:02,110 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:26:06,919 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 13:26:08,509 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:26:13,234 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 13:26:14,689 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:26:18,211 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 13:26:19,708 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:32:28,190 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 13:32:29,615 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:32:32,240 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:32:34,686 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:32:37,672 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:32:39,005 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:32:45,964 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 13:32:47,487 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:32:52,098 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 13:32:53,873 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:32:57,401 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 13:32:58,793 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:33:14,837 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:33:17,142 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 13:33:18,618 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:33:37,118 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 13:33:38,497 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:33:43,410 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 13:33:44,853 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:33:48,310 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 13:33:49,775 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:33:52,457 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:33:53,974 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:33:56,567 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:33:57,892 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:34:08,319 django.request WARNING  Unauthorized: /api/texthandler/v1/get-snippet-text-details
+2024-04-21 13:35:05,080 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 13:35:06,729 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:35:53,627 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:35:54,982 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:36:09,627 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:36:11,448 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:36:20,814 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:36:22,364 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:36:26,993 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:36:28,241 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:36:42,639 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:36:44,026 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:36:46,572 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:36:48,200 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:36:50,545 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:36:51,892 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:36:56,610 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:36:58,162 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:37:00,901 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:37:02,545 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:37:08,998 django.request WARNING  Unauthorized: /api/texthandler/v1/update-snippet-text
+2024-04-21 13:37:49,738 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:37:51,280 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:37:54,761 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:37:56,442 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:37:59,013 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:38:00,288 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:38:03,650 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:38:05,229 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:38:07,591 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:38:08,836 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:38:16,632 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:38:17,989 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:39:10,339 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 13:39:12,103 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:39:14,906 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:39:16,778 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:59:26,298 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 13:59:28,481 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:59:35,287 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 13:59:36,953 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:59:46,205 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:59:47,929 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:59:51,372 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:59:52,842 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 13:59:55,365 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 13:59:56,660 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:00:09,085 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:00:10,527 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:00:12,830 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:00:14,242 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:00:21,088 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:00:22,951 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:00:32,152 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:00:33,689 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:00:36,723 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:00:38,036 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:00:40,436 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:00:41,631 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:00:57,440 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:00:58,960 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:01:01,254 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:01:02,677 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:01:09,574 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:01:11,160 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:01:18,045 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:01:19,433 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:01:21,779 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:01:23,569 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:01:28,094 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:01:29,381 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:01:41,744 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:01:43,490 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:02:03,936 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:02:05,413 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:02:10,184 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:02:12,182 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:02:22,271 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:02:23,607 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:02:36,482 django.request WARNING  Unauthorized: /api/texthandler/v1/get-snippet-text-list
+2024-04-21 14:02:43,049 django.request WARNING  Unauthorized: /api/texthandler/v1/get-snippet-text-list
+2024-04-21 14:02:53,908 django.request ERROR    Internal Server Error: /api/texthandler/v1/get-snippet-text-list
+2024-04-21 14:03:09,446 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:03:11,067 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:03:13,434 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:03:14,817 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:03:20,693 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:03:22,216 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:03:24,501 django.request ERROR    Internal Server Error: /api/texthandler/v1/get-snippet-text-list
+2024-04-21 14:03:34,013 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:03:35,874 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:04:17,589 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:04:19,036 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:04:24,216 django.request ERROR    Internal Server Error: /api/texthandler/v1/get-snippet-text-list
+2024-04-21 14:05:22,189 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:05:23,536 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:05:52,404 django.request ERROR    Internal Server Error: /api/texthandler/v1/get-snippet-text-list
+2024-04-21 14:05:59,824 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:06:01,266 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:06:11,462 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:06:12,950 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:06:25,314 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:06:26,937 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:06:28,987 django.request ERROR    Internal Server Error: /api/texthandler/v1/get-snippet-text-list
+2024-04-21 14:06:53,761 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:06:55,418 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:07:08,250 django.request ERROR    Internal Server Error: /api/texthandler/v1/get-snippet-text-list
+2024-04-21 14:09:18,416 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:09:19,845 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:09:26,736 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:09:28,938 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:09:31,718 django.request WARNING  Method Not Allowed: /api/texthandler/v1/update-snippet-text
+2024-04-21 14:10:27,324 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:10:29,197 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:10:34,980 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:10:36,397 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:10:46,611 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:10:48,051 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:10:53,776 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:10:55,234 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:11:17,872 django.request WARNING  Unauthorized: /api/texthandler/v1/get-snippet-text-details
+2024-04-21 14:11:20,390 django.request WARNING  Unauthorized: /api/texthandler/v1/get-snippet-text-details
+2024-04-21 14:11:21,950 django.request WARNING  Unauthorized: /api/texthandler/v1/get-snippet-text-details
+2024-04-21 14:11:24,074 django.request WARNING  Not Found: /favicon.ico
+2024-04-21 14:16:07,475 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:16:09,466 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:17:00,874 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:17:03,238 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:17:06,200 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:17:07,725 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:17:22,272 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:17:24,100 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:17:27,893 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:17:29,439 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:17:34,245 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:17:35,866 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:17:45,976 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:17:48,108 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:17:55,117 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:17:56,587 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:17:59,090 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:18:00,602 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:18:05,288 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:18:06,897 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:18:47,983 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:18:49,825 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:18:52,015 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:18:53,396 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:18:57,921 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:18:59,801 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:19:02,498 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:19:03,871 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:19:06,359 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:19:08,136 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:19:10,441 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:19:11,685 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:19:18,369 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:19:20,035 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:19:23,779 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:19:25,121 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:19:27,489 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:19:29,178 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:19:31,580 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:19:32,862 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:19:35,293 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:19:36,711 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:20:11,149 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:20:12,605 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:20:16,665 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:20:18,479 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:20:24,249 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:20:25,844 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:20:34,793 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:20:36,332 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:20:38,954 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:20:40,309 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:20:51,896 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:20:53,411 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:20:55,919 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:20:57,301 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:21:02,883 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:21:04,361 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:21:06,851 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:21:08,239 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:21:13,852 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:21:15,282 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:21:26,373 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:21:27,819 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:21:33,469 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:21:35,031 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:21:39,576 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:21:40,892 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:21:44,415 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:21:45,825 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:21:48,419 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:21:49,952 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:21:58,987 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:22:00,701 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:22:14,208 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:22:15,593 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:22:20,126 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:22:21,505 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:22:24,041 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:22:25,629 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:22:30,986 django.request WARNING  Unauthorized: /api/texthandler/v1/delete-snippet-text
+2024-04-21 14:22:40,048 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:22:41,349 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:23:06,042 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:23:07,447 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:23:10,948 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:23:12,580 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:23:14,502 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:23:16,796 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:23:19,452 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:23:20,944 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:23:23,873 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:23:25,361 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:25:42,880 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:25:44,623 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:25:47,739 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:25:49,600 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:25:52,153 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:25:53,529 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:26:22,005 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:26:23,919 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:26:26,499 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:26:27,976 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:26:31,241 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:26:32,939 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:26:45,410 django.request WARNING  Unauthorized: /api/texthandler/v1/delete-snippet-text
+2024-04-21 14:27:30,441 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:27:32,134 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:30:55,709 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:30:57,353 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:31:01,044 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:31:02,399 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:31:04,885 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:31:06,396 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:31:18,873 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:31:20,645 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:31:26,502 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:31:27,993 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:31:33,961 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:31:35,465 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:31:39,946 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:31:41,886 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:31:49,949 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:31:51,338 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:31:53,812 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:31:55,116 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:32:01,815 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:32:03,287 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:32:10,070 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:32:11,583 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:32:17,237 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:32:18,821 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:32:29,268 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:32:30,799 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:32:37,705 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:32:39,159 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:32:42,702 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:32:44,207 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:32:46,764 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:32:48,487 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:32:52,353 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\serializers.py changed, reloading.
+2024-04-21 14:32:53,638 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:32:56,661 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:32:58,135 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:33:10,616 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:33:12,060 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:33:15,700 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:33:17,093 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:33:19,829 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:33:21,449 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:33:23,892 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:33:25,533 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:33:28,020 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:33:29,795 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:33:32,301 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:33:33,756 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:33:38,665 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:33:40,277 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:33:42,795 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:33:44,065 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:33:49,821 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:33:51,675 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:34:04,075 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\models.py changed, reloading.
+2024-04-21 14:34:05,439 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:34:08,035 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:34:09,391 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:34:11,841 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:34:13,637 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:35:40,336 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:35:41,726 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:35:45,226 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:35:46,543 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:35:51,240 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:35:52,532 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:35:55,909 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:35:57,300 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:36:04,460 django.request WARNING  Unauthorized: /api/texthandler/v1/get-tag-titles-list
+2024-04-21 14:36:57,638 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:36:59,294 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:37:02,864 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:37:04,766 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:37:11,731 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:37:13,044 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:37:15,603 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:37:16,883 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:37:31,406 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:37:32,850 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:37:39,633 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:37:41,011 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:37:44,851 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:37:46,062 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:37:51,820 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:37:53,471 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:38:00,298 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:38:01,765 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:38:12,016 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:38:13,496 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:38:21,585 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:38:22,929 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:38:44,324 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:38:45,798 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:38:48,314 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:38:49,563 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:39:03,159 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:39:04,667 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:39:08,726 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:39:10,246 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:39:13,457 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:39:14,998 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:39:18,575 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:39:19,839 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:39:26,770 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:39:28,479 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:39:31,909 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:39:33,454 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:39:47,168 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:39:48,437 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:39:54,867 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:39:56,495 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:40:41,621 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:40:43,377 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:40:46,280 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:40:47,836 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:40:53,539 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:40:55,007 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:40:57,522 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:40:58,886 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:41:10,139 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:41:11,796 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:41:14,114 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:41:15,459 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:41:19,159 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:41:20,718 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:41:23,174 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:41:24,624 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:41:28,623 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:41:30,369 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:41:32,722 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:41:33,999 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:41:40,813 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:41:42,252 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:41:45,854 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:41:47,879 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:41:54,905 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:41:56,162 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:42:01,809 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:42:03,083 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:42:05,364 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:42:06,817 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:42:09,539 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:42:11,190 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:42:13,524 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:42:14,885 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:42:18,431 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\urls.py changed, reloading.
+2024-04-21 14:42:19,840 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:43:00,403 django.request WARNING  Unauthorized: /api/texthandler/v1/get-tag-titles-details
+2024-04-21 14:43:33,430 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:43:35,064 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:43:38,601 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:43:40,565 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:43:49,521 django.request ERROR    Internal Server Error: /api/texthandler/v1/get-tag-titles-details
+2024-04-21 14:44:01,426 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:44:03,274 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:44:06,215 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:44:07,868 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:44:13,392 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\views.py changed, reloading.
+2024-04-21 14:44:15,247 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:44:20,047 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:44:21,380 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:44:43,102 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:44:44,562 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:44:49,374 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:44:50,889 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:45:15,805 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:45:17,427 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:45:20,294 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:45:21,871 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-04-21 14:45:26,445 django.utils.autoreload INFO     D:\projects\admaren\apps\texthandler\schemas.py changed, reloading.
+2024-04-21 14:45:27,890 django.utils.autoreload INFO     Watching for file changes with StatReloader
